@@ -1,0 +1,107 @@
+NECTARGUARD WEBSITE - HOW TO UPLOAD
+===================================
+
+WHAT IS IN THIS FOLDER
+  index.html                 - page markup (all sections, hero to footer)
+  css/style.css              - all styles: colours, fonts, sizes, mobile layout
+  js/testimonials.js         - EDIT ME: your testimonials + "150+" number
+  js/site-data.js            - EDIT ME: Living Plant stage text, product
+                               names and product picture for each stage
+  js/site.js                 - page behaviour (mobile layout, menus, stages)
+  js/testimonials-render.js  - draws testimonial cards + arrows (no need to edit)
+  js/runtime.js              - renders the desktop page (no need to edit)
+  images/                    - all photos, logo, product pictures
+  images/testimonials/       - put grower photos here
+Keep everything together in the same structure, exactly as it is.
+Upload ALL of it: index.html, css/, js/ and images/.
+
+No passwords, API keys or database are needed. It is a plain static site.
+The only login you need is your own hosting / domain account.
+
+OPTION A - Hostinger / GoDaddy / any cPanel hosting
+  1. Log in to your hosting panel -> File Manager.
+  2. Open the folder public_html (the root of your domain).
+  3. Delete or rename any old index.html / default page there.
+  4. Upload this ZIP, then right-click -> Extract.
+  5. Move index.html and the css, js and images folders directly into public_html
+     (not inside a sub-folder), so the path is public_html/index.html.
+  6. Open https://yourdomain.com - done.
+
+OPTION B - Netlify (free, fastest)
+  1. Go to app.netlify.com -> "Add new site" -> "Deploy manually".
+  2. Drag the unzipped "nectarguard-website" folder onto the page.
+  3. Site settings -> Domain management -> add your domain and follow
+     the DNS steps Netlify shows.
+
+SCREEN FIT (all devices)
+  The site automatically picks the right layout:
+  - Phones and tablets (under 1100 px wide): a single-column mobile
+    layout with large readable text, touch-friendly buttons, a menu
+    button, swipeable stage tabs and testimonials, and the full crop-
+    plan wizard.
+  - Laptops and desktops (1100 px and wider): the full design, scaled
+    to fill the screen.
+  Tested at 360, 390, 768, 1024, 1280 and 1920 px wide with no
+  sideways scrolling or overlapping text.
+
+STILL TO CONNECT BEFORE GOING LIVE
+  - Enquiry form ("Enquire Now"): it has no backend yet. Hook it to a
+    form service (Formspree, Netlify Forms, Google Form) or WhatsApp.
+  - Social icons and footer links point to "#": add your real
+    Facebook / Instagram / YouTube / LinkedIn URLs.
+  - Office address with PIN, real testimonials, product photos and the
+    "[150]+ growers" figure are still placeholders.
+  - Photos are free Unsplash stand-ins (free for commercial use);
+    replace with your own when ready.
+
+HOW TO CHANGE A PHOTO LATER (no coding needed)
+  The website reads every photo from the "images" folder by its file
+  name. To change a photo, just replace the file with a new one that has
+  EXACTLY the same name.
+  Example - product family photo:
+    1. Rename your new photo to:  product-family.png
+    2. In File Manager open public_html/images/
+    3. Upload it and choose "Replace / Overwrite".
+    4. Refresh the website (Ctrl+F5 on laptop) - the new photo appears.
+  Best size for the product family photo: 2560 x 1280 px, PNG.
+
+
+==========================================================
+ TESTIMONIALS  (add as many as you like)
+==========================================================
+Open the file  js/testimonials.js  in any text editor (Notepad is fine).
+Everything is explained at the top of that file. In short:
+
+ 1. Put the grower's photo in  images/testimonials/
+    (e.g. images/testimonials/ramesh-patil.jpg, landscape ~800 x 640 px)
+ 2. Copy one block  { ... },  paste it below the last one, and change:
+      photo: "images/testimonials/ramesh-patil.jpg",
+      quote: "What the grower said...",
+      name:  "Ramesh Patil",
+      crop:  "Grape grower",
+      place: "Nashik",
+      stars: 5
+ 3. To change the heading number, edit:  window.NG_GROWER_COUNT = "150+";
+ 4. Upload js/testimonials.js and the photo to the same places on your host.
+
+The ← → arrows and finger-swipe work automatically for any number of cards.
+Leave photo: "" and a neat "Grower's photo" placeholder shows instead.
+Delete a whole { ... }, block to remove a testimonial.
+
+==========================================================
+ PRODUCT PHOTOS (Living Plant section)
+==========================================================
+ Germination    → images/product-growmax-rise.png
+ Vegetative     → images/product-growmax-green.png
+ Flowering      → images/product-freshmax-origin.png
+ Fruit sizing   → images/product-freshmax-set.png
+ Ripening       → images/product-freshmax-glow.png
+ Under stress   → images/product-stressguard.png
+ NutriPrime bag → images/product-nutriprime.png
+To replace one: save the new picture as a PNG with a transparent
+background (about 1000 x 1400 px) using EXACTLY the same file name, and upload it.
+
+To use a different picture for a stage, you can also change its "img" line
+in js/site-data.js (e.g. "img": "images/my-new-bottle.png").
+Products are shown standing on a soft lit floor; the picture is scaled to
+fill the box automatically, so any tightly-cropped transparent PNG fits.

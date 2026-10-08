@@ -1,0 +1,1 @@
+Put grower photos here (JPG/PNG, landscape ~800x640). Then list them in js/testimonials.js
