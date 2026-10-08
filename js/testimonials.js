@@ -21,43 +21,51 @@ window.NG_GROWER_COUNT = "150+";
 
 window.NG_TESTIMONIALS = [
   {
-    photo: "",
-    quote: "Write the grower's words here, with their consent — what changed in the soil, the crop or the harvest.",
-    name:  "Grower name",
-    crop:  "Grape grower",
-    place: "Nashik",
+    photo: "images/testimonials/vithal-dhas.jpg",
+    quote: "My soybean stayed green and even across the whole field this season, and the plants held strong right through pod filling.",
+    name:  "Vithal Dhas",
+    crop:  "Soybean grower",
+    place: "Partur, Jalna",
     stars: 5
   },
   {
-    photo: "",
-    quote: "Write the grower's words here, with their consent — what changed in the soil, the crop or the harvest.",
-    name:  "Grower name",
-    crop:  "Terrace gardener",
-    place: "Pune",
+    photo: "images/testimonials/kailash-muluk-sugarcane.jpg",
+    quote: "My sugarcane grew thick and tall this season. The canes are strong and the field stayed healthy throughout.",
+    name:  "Kailash Muluk",
+    crop:  "Sugarcane grower",
+    place: "",
     stars: 5
   },
   {
-    photo: "",
-    quote: "Write the grower's words here, with their consent — what changed in the soil, the crop or the harvest.",
-    name:  "Grower name",
-    crop:  "Sugarcane farmer",
-    place: "Beed",
+    photo: "images/testimonials/datta-gayke.jpg",
+    quote: "The turmeric came up evenly and the leaves stayed broad and green. I am happy with how the crop is growing.",
+    name:  "Datta Gayke",
+    crop:  "Turmeric grower",
+    place: "",
     stars: 5
   },
   {
-    photo: "",
-    quote: "Write the grower's words here, with their consent — what changed in the soil, the crop or the harvest.",
-    name:  "Grower name",
-    crop:  "Pomegranate grower",
-    place: "Solapur",
+    photo: "images/testimonials/pravin-khodake.jpg",
+    quote: "We measured the wheat ourselves. The plants grew tall and the earheads came out healthy.",
+    name:  "Pravin Khodake",
+    crop:  "Wheat grower",
+    place: "Risod, Washim",
     stars: 5
   },
   {
-    photo: "",
-    quote: "Write the grower's words here, with their consent — what changed in the soil, the crop or the harvest.",
-    name:  "Grower name",
-    crop:  "Vegetable grower",
-    place: "Chhatrapati Sambhajinagar",
+    photo: "images/testimonials/kailash-muluk-cotton.jpg",
+    quote: "The cotton plants are healthy, with good branching and plenty of bolls. The team guided me at every stage.",
+    name:  "Kailash Muluk",
+    crop:  "Cotton grower",
+    place: "",
+    stars: 5
+  },
+  {
+    photo: "images/testimonials/vittal-thete.jpg",
+    quote: "Our sugarcane stands tall and green. NectarGuard has become part of how we care for the soil.",
+    name:  "Vittal Thete",
+    crop:  "Sugarcane grower",
+    place: "",
     stars: 5
   }
 ];
