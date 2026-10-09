@@ -59,7 +59,7 @@ HOW TO CHANGE A PHOTO LATER (no coding needed)
   name. To change a photo, just replace the file with a new one that has
   EXACTLY the same name.
   Example - product family photo:
-    1. Rename your new photo to:  product-family.png
+    1. Rename your new photo to:  product-family.jpg
     2. In File Manager open public_html/images/
     3. Upload it and choose "Replace / Overwrite".
     4. Refresh the website (Ctrl+F5 on laptop) - the new photo appears.

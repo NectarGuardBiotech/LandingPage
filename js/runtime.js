@@ -1,4 +1,9 @@
 /* Page runtime: renders the desktop page templates. No need to edit. */
+/* Always open the page at the top (stops phones jumping to a random spot on reopen/refresh) */
+(function(){try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(e){}
+function top(){if(!location.hash){try{window.scrollTo({top:0,left:0,behavior:'instant'});}catch(e){window.scrollTo(0,0);}}}
+window.addEventListener('load',top);
+window.addEventListener('pageshow',function(e){if(e.persisted)top();});})();
 (function(){
 class DCLogic{constructor(props){this.props=props||{};this.state={};}
  setState(p){var n=typeof p==='function'?p(this.state,this.props):p;Object.assign(this.state,n||{});if(this.__r)this.__r();}

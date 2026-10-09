@@ -20,7 +20,7 @@ function renderStage(){var bar=$('#m-stagebar');if(!bar)return;
  var s=D.stages[stage];
  $('#m-stage').innerHTML='<div class="m-st-head"><span>STAGE 0'+(stage+1)+'</span><b>'+s.label+'</b></div>'+
   '<div class="m-st-two"><div><span>WHAT THIS STAGE NEEDS</span><p>'+s.needs+'</p></div><div><span>'+(mode==='urban'?'ON YOUR TERRACE':'ON YOUR FARM')+'</span><p>'+(mode==='urban'?s.urban:s.farm)+'</p></div></div>'+
-  '<div class="m-st-body"><div class="m-prod"><div class="ng-show m"><img src="'+s.img+'" alt="'+s.name+'"></div><div class="m-prod-cap"><span>'+s.series+'</span><b>'+s.name+'</b><small>'+s.objective+'</small></div></div>'+
+  '<div class="m-st-body"><div class="m-prod"><div class="ng-show m"><img loading="lazy" decoding="async" src="'+s.img+'" alt="'+s.name+'"></div><div class="m-prod-cap"><span>'+s.series+'</span><b>'+s.name+'</b><small>'+s.objective+'</small></div></div>'+
   '<img class="m-st-plant" src="'+D.plant+'" alt="The living plant" loading="lazy">'+
   '<div class="m-calls">'+s.calls.map(function(c){return '<div class="m-call"><span>'+c.tag+'</span><b>'+c.title+'</b><p>'+c.body+'</p></div>';}).join('')+'</div></div>';}
 function renderLayers(){var el=$('#m-layers');if(!el)return;
